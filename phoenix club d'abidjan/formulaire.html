@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de sélection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #e6f7ff; /* Couleur de fond pour le fieldset */
+        }
+        legend {
+            background-color: #007bff; /* Couleur de fond pour la légende */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50; /* Couleur verte */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049; /* Couleur au survol */
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Bannière -->
+    <div style="width: 100%; height: auto; text-align: center;">
+        <img src="téléchargement.jpg" alt="Bannière" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="form-container">
+        <form action="process.php" method="POST">
+            <fieldset>
+                <legend>Formulaire d'inscription pour partenaires</legend>
+
+                <h1>Enregistrer votre entreprise</h1>
+
+                   <h5>Veuillez fournir tous les détails requis pour enregistrer votre entreprise auprès de Social Glass Inc.</h5>
+                   <ul>
+                    <li><label for="Proprietaire de l'entreprise">Nom l'entreprise:</label></li>
+                        </ul>
+                   
+                    <input type="text" id="entreprise" name="entreprise" placeholder="Nom de l'entreprise" required>
+                    <ul>
+                <li><label for="Proprietaire de l'entreprise">Proprietaire de l'entreprise:</label></li>
+                    </ul>
+                     
+                
+           
+               <input type="text" id="Proprietaire de l'entreprise" name="Proprietaire de l'entreprise" placeholder="Entrer le nom du proprietaire de l'entreprise" required>
+                   
+                <input type="text" id="prenom" name="prenom" placeholder="Entrer le nom du proprietaire de l'entreprise" required>
+
+            </select>
+            <ul>
+           <li> <label for="type d'entreprise">type d'entreprise:</label></li>
+        </ul>
+            <select name="type d'entreprise">
+            <option value="société anonyme">société anonyme</option>
+            <option value="entreprise individuelle">entreprise individuelle</option>
+            <option value="société en nom collective" >société en nom collective</option>
+            <option value="autre">autre</option>
+            </select>
+                    <ul>
+                        <li><label for="date">Date :</label></li>
+                    </ul>
+                <input type="date" id="date" name="date" placeholder="date" required>
+
+                <ul>
+                    <li><label for="site web de l'entreprise">site web de l'entreprise:</label></li>
+                        </ul>
+                    <input type="text" id="site web de l'entreprise" name="site web de l'entreprise" placeholder="site web de l'entreprise" required>
+                    <ul>
+                        <li><label for="Produits / services fournis">Produits / services fournis :</label></li>
+                    </ul>
+                    <input type="text" id="Produits / services fournis" name="Produits / services fournis" placeholder="Produits / services fournis" required>
+                    <ul>
+                <li><label for="numero de téléphone">numero de téléphone :</label></li>
+                    </ul>
+                   <input type="numero de téléphone" id="numero de téléphone" name="numero de téléphone" placeholder="numero de téléphone" required>
+
+                    <ul>
+                <li><label for="email">Email :</label></li>
+                    </ul>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+               <button type="submit"> <a href="projet.html">S'inscrire</a></button>
+                <input type="hidden" name="invisible" value="La valeur cachée">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

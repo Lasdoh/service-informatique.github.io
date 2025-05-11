@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICE INFO</title>
+    <!-- Ajout d'une feuille de style externe -->
+    <link rel="stylesheet" href="styles.css">
+<!-- Icône pour le favicon -->
+<link rel="icon" href="téléchargement.jpg" type="image/x-icon">
+
+    <style>
+     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; } header { background-color: #333333; color: #ffffff; padding: 5px 0; text-align: center; } nav { display: flex; justify-content: right; background-color: #444; } nav ul { list-style-type: none; padding: 0; margin: 0; display: flex; } nav ul li { position: relative; } nav ul li a, nav ul li button { color: #fff; padding: 14px 20px; text-decoration: none; text-align: center; background: none; border: none; cursor: pointer; } nav ul li a:hover, nav ul li button:hover { background-color: #555; } .dropdown-content { display: none; position: absolute; background-color: #444; min-width: 160px; z-index: 1; } .dropdown-content a { display: block; padding: 12px 16px; text-decoration: none; color: white; } .dropdown-content a:hover { background-color: #555; } .dropdown:hover .dropdown-content { display: block; } .container { padding: 20px; } .content { margin: 20px 0; } footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; } .text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 24px; font-weight: bold; } .logo { width: 150px; } /* Style de base pour le menu */ nav ul { list-style-type: none; padding: 0; margin: 0; background-color: #333; display: flex; justify-content: center; } nav ul li { position: relative; } nav ul li a { display: block; padding: 10px 20px; color: white; text-decoration: none; } nav ul li a:hover { background-color: #555; } /* Style pour les sous-menus */ nav ul ul { display: none; position: absolute; top: 100%; left: 0; background-color: #333; padding: 0; } nav ul ul li { width: 200px; } nav ul ul li a { padding: 10px; } nav ul ul li a:hover { background-color: #555; } /* Afficher les sous-menus au survol */ nav ul li:hover > ul { display: block; } button { background-color: #4CAF50; /* Couleur verte */ color: white; border: none; padding: 15px 30px; text-align: center; font-size: 16px; cursor: pointer; border-radius: 5px; } button:hover { background-color: #45a049; /* Couleur au survol */ } </style> <link rel="stylesheet" type="text/css" href="styles.css"> <link rel="stylesheet" type="text/css" href="style.css"> <link rel="icon" href="Colorful Mobile Service Free Logo (3).png" type="image/x-icon">
+</head>
+<body>
+     <!-- En-tête -->
+ 
+        
+<form action="process.php" method="POST">
+  
+    <fieldset>
+        <legend></legend>
+    <!-- Navigation principale -->
+    <nav>
+        <ul>
+            
+            <li>  
+                <ul>
+                    <li><a href="Equipe Première.html">Historique</a></li>
+                    
+                </ul>
+            </li>
+                       
+        </ul>
+    </nav>
+   
+    
+    <section >
+       
+        <div class="slideshow-container"> 
+            <div class="slide">
+                <img src="Films et TV 24_03_2025 01_19_18.png" alt="Image 1" style="width:100%">
+                <p>une equipe c'est une famille</p>
+            </div>
+            <div class="slide">
+                <img src="Films et TV 24_03_2025 01_22_43.png" alt="Image 2" style="width:100%">
+                <p>la vie n'est qu'un reve auquel nous croyons tous</p>
+            </div>
+        </div>  
+        
+    </section>
+
+  
+    <script>
+        let currentSlide = 0;
+    
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+    
+        function prevSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    
+        function nextSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+    
+        // Affichage initial
+        showSlide(currentSlide);
+    
+        // Défilement automatique toutes les 5 secondes
+        setInterval(nextSlide, 5000);
+    </script><script>
+let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach((slide, index) => {
+        slide.style.display = "none";
+    });
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+// Start the slideshow
+showSlides();
+</script>
+    <!-- Contenu principal -->
+    <main class="container">
+        <div class="content">
+           
+        
+    </main>
+</fieldset>
+</form>
+    <br>
+    <br>
+   
+</body>
+</html>
+
+
+
+

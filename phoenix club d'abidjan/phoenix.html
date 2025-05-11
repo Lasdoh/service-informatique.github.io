@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Club d'Abidjan</title>
+    <!-- Ajout d'une feuille de style externe -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Icône pour le favicon -->
+    <link rel="icon" href="téléchargement.jpg" type="image/x-icon">
+
+    <style>
+     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; } 
+     header { background-color: rgb(237, 20, 71); color: #ffffff; padding: 5px 0; text-align: center; }
+      nav { display: flex; justify-content: right; background-color: #db033d; }
+       nav ul { list-style-type: none; padding: 0; margin: 0; display: flex; } 
+       nav ul li { position: relative; }
+        nav ul li a, nav ul li button { color: #fff; padding: 14px 20px; text-decoration: none; text-align: center; background: none; border: none; cursor: pointer; }
+         nav ul li a:hover, nav ul li button:hover { background-color: #dffe0f; }
+          .dropdown-content { display: none; position: absolute; background-color: #444; min-width: 160px; z-index: 1; } 
+          .dropdown-content a { display: block; padding: 12px 16px; text-decoration: none; color: white; }
+           .dropdown-content a:hover { background-color: #c47a0b; } 
+           .dropdown:hover .dropdown-content { display: block; } 
+           .container { padding: 20px; }
+            .content { margin: 20px 0; }
+             footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; } 
+             .text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 24px; font-weight: bold; } 
+             .logo { width: 150px; } /* Style de base pour le menu */ nav ul { list-style-type: none; padding: 0; margin: 0; background-color: #8b810b; display: flex; justify-content: center; }
+              nav ul li { position: relative; } 
+              nav ul li a { display: block; padding: 10px 20px; color: white; text-decoration: none; }
+               nav ul li a:hover { background-color: #ed106c; }
+                /* Style pour les sous-menus */ nav ul ul { display: none; position: absolute; top: 100%; left: 0; background-color: #9c5935; padding: 0; }
+                 nav ul ul li { width: 200px; } 
+                 nav ul ul li a { padding: 10px; }
+                  nav ul ul li a:hover { background-color: #0b54d4; } 
+                  /* Afficher les sous-menus au survol */ nav ul li:hover > ul { display: block; }
+                   button { background-color: #af4c54; /* Couleur verte */ color: white; border: none; padding: 15px 30px; text-align: center; font-size: 16px; cursor: pointer; border-radius: 5px; } 
+                   button:hover { background-color: #a0455a; /* Couleur au survol */ }
+    
+
+
+
+               
+                   
+
+                  
+
+
+
+                   .sections-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        padding: 25px;
+    }
+    .section {
+        width: 350px;
+        padding: 6px;
+        border-radius: 15px;
+        color: rgb(15, 4, 4);
+        text-align: center;
+        text-decoration: none; /* Supprime la ligne sous les liens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .section:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .section1 {
+       
+        background-color: #1e22ff; /* Bleu */
+    }
+    .section2 {
+        
+        background-color: #cd3294; /* Vert */
+    }
+    .section3 {
+        
+        background-color: #b03030; /* Orange */
+    }
+    .section4 {
+       
+        background-color: #14dc64; /* Rouge */
+    }
+
+
+                    </style>
+                     <link rel="stylesheet" type="text/css" href="styles.css"> 
+                     <link rel="stylesheet" type="text/css" href="style.css">
+                      <link rel="icon" href="Colorful Mobile Service Free Logo (3).png" type="image/x-icon">
+                      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+                      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     
+</head>
+<body>
+    
+   <!--Logo + Navbar Start-->
+   <div class="logo-navbar" style="background:none;">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-11 col-sm-9">
+          <nav class="main-nav">
+            <ul>
+              <li class="nav-item"> <a href="index.php">Accueil</a>
+              </li>
+               <li class="nav-item"> <a href="matchs-prochains.php">Macths</a>
+              </li>
+               <li class="nav-item"> <a href="actualites.php">Actualités</a>
+              </li>
+              <li class="nav-item drop-down"> <a href="fc-sanpedro.php">Club</a>
+                <ul>
+                  <li><a href="organigramme.php">Organigramme</a></li>
+                  <li><a href="historique.php">Historique</a></li>
+                  <li><a href="palmares.php">Palmarès</a></li>
+                  <li><a href="centre-entrainement.php">Centre d'entrainement</a></li>
+                  <li><a href="partenaires.php">Partenaires</a></li>
+                </ul>
+              </li>
+              
+                 <li class="nav-item drop-down"> <a href="equipe_pro.php">Equipe pro.</a>
+                <ul>
+                  <li><a href="staff.php">Staff</a></li>
+                  <li><a href="liste-joueurs.php?mark=Ligue-1">Effectif</a></li>
+                  <li><a href="classement.php">Classement</a></li>
+                  <li><a href="matchs-resultats.php">Résultats</a></li>
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item drop-down"> <a href="">Académie</a>
+                <ul>
+                      <li><a href="staff-academie.php?mark=13&article=Staff&type_mark=type">Staff</a></li>
+                      <li><a href="liste-joueurs.php?mark=U13">U13</a></li>
+                      <li><a href="liste-joueurs.php?mark=U15">U15</a></li>
+                      <li><a href="liste-joueurs.php?mark=U17">U17</a></li>
+                      <li><a href="liste-joueurs.php?mark=U20">U20</a></li>
+  
+  
+                </ul>
+              </li>	
+
+              <li class="nav-item drop-down"> <a href="">Saisons</a>
+                <ul>
+                                        <li><a href="saisons.php?mark=2023-2024">2023-2024</a></li>
+
+                                              <li><a href="saisons.php?mark=2024-2025">2024-2025</a></li>
+
+                                              <li><a href="saisons.php?mark=2025-2026">2025-2026</a></li>
+
+                                              <li><a href="saisons.php?mark=2026-2027">2026-2027</a></li>
+
+                                        </ul>
+              </li>	
+              
+                 <li class="nav-item drop-down"> <a href="">Galerie</a>
+                <ul>
+                      <li><a href="">Photos</a></li>
+                  <li><a href="#">Vidéos</a></li>
+              
+                </ul>
+              </li>
+              
+                 <li class="nav-item"> <a href="#">Contact</a>
+              </li>
+              
+               <li class="nav-item buy-ticket"> <a href="#">Billeterie</a> </li>
+             
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Bannière -->
+    <div style="width: 100%; height: auto; text-align: center;">
+        <img src="téléchargement.jpg" alt="Bannière" style="width: 10%; height: auto;">
+    </div>
+    
+   
+    <section >
+       
+        <div class="slideshow-container"> 
+            <div class="slide">
+                <img src="Films et TV 24_03_2025 01_22_43.png" alt="Image 1" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="Films et TV 24_03_2025 01_19_18.png" alt="Image 2" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="Films et TV 24_03_2025 01_25_15.png" alt="Image 3" style="width:100%">
+            </div>
+        </div>
+        
+        
+    </section>
+
+  
+    <script>
+        let currentSlide = 0;
+    
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+    
+        function prevSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    
+        function nextSlide() {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+    
+        // Affichage initial
+        showSlide(currentSlide);
+    
+        // Défilement automatique toutes les 5 secondes
+        setInterval(nextSlide, 5000);
+    </script><script>
+let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach((slide, index) => {
+        slide.style.display = "none";
+    });
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+// Start the slideshow
+showSlides();
+</script>
+
+   
+    <br>
+   <br>
+   <br>
+   <br>
+    <br>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+<br>
+   <br>
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colored-section {
+    background-color: #1d1f20; /* Choisissez la couleur que vous souhaitez */
+    color: white;
+    padding: 50px;}
+
+
+
+.sections-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        padding: 50px;
+    }
+    .section {
+        width: 500px;
+        padding: 10px;
+        border-radius: 15px;
+        color: rgb(15, 4, 4);
+        text-align: center;
+        text-decoration: none; /* Supprime la ligne sous les liens */
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .section:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 6px rgba(146, 6, 6, 0.2);
+    }
+    .section1 {
+       
+        background-color: #1e22ff; /* Bleu */
+     }
+    .section2 {
+        
+        background-color: #cd3294; */ Vert */
+     }
+    .section3 { 
+        
+     
+        background-color: #b03030;  Orange 
+    }
+    .section4 {
+       
+
+        background-color: ;  Rouge 
+     } 
+
+                  </style>
+                     <link rel="stylesheet" type="text/css" href="styles.css"> 
+                     <link rel="stylesheet" type="text/css" href="style.css">
+                      <link rel="icon" href="Colorful Mobile Service Free Logo (3).png" type="image/x-icon">
+                      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+                      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     
+    </style>
+</head>
+<body>
+
+   
+    <section class="call-to-action call-to-action-default mb-5 call-to-action-match"
+    style="background-color: #000000!important; color: white;">
+    <div class="container container-xl-custom">
+        <div class="row">
+                            <div class="col-sm-5 col-lg-5" style="border-right: 1px solid #9c9c9c;">
+                    <div class="row">
+                        <div class="col-lg-4 text-left d-flex align-items-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="text-light font-weight-bold">
+                                        Prochain match
+                                    </span>
+                                </div>
+                                <span class="text-light font-weight-light col-12">Journée 
+                                </span>
+                                <span class="text-light font-weight-light col-12">
+                                    date pas encore definie
+                                </span>
+                                <span class="text-light font-weight-light col-12">
+                                    <!-- Stade -->
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mt-2">
+                            <div class="row">
+                                <div class="col-lg-5 col-sm-12">
+                                    <div class="list-groups">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="téléchargement.jpg"
+                                                width="40" alt="phoenix club abidjan"
+                                                title="ISCA">
+                                            <img src="4cc1ed82-d786-4d1e-8915-bf30675b7973.jpg"
+                                                width="40" alt="USG"
+                                                title="ASEC Mimosas">
+                                        </div>
+                                        <div class="text-light d-block text-center p-2" style="line-height: 13px;">
+                                            <span class="d-block mb-1 text-1">phoenix club abidjan </span>
+                                            <span class="font-weight-bold" style="color: yellow">vs</span>
+                                            <span class="d-block mt-1 text-1">USG foot</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-sm-12 d-flex align-content-center">
+                                    <div class="countdown countdown-light my-auto w-100" data-plugin-countdown
+                                        data-plugin-options="{'textDay': 'Jrs', 'textHour': 'Hr', 'textMin': 'Min', 'textSec': 'Sec', 'date': '2025/03/28 18:00:00', 'numberClass': 'font-weight-bold'}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        <div class="col-sm-3 col-lg-3 d-block" style="border-right: 0.1px solid #9c9c9c;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <span class="text-light font-weight-bold d-block">
+                                match amical
+                            </span>
+                            <span class="text-light font-weight-normal d-block">
+                                <!-- Ligue 1 -->
+                            </span>
+                        </div>
+                        <div class="col-lg-12 mt-2">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <div class="col">
+                                    <img src="téléchargement.jpg"
+                                        width="30" alt="Phoenix club abidjan"
+                                        title="Phoenix club abidjan">
+                                    <span class="d-block mt-1 text-1">
+                                        Phoenix club abidjan
+                                    </span>
+                                </div>
+                                                                <div class="col d-flex align-items-center justify-content-center p-3">
+                                    <span style="font-size: 1.7rem; color: #f6c603; font-weight: bold;">3</span>
+                                    <span style="font-size: 1.2rem; margin: auto;">-</span>
+                                    <span style="font-size: 1.7rem; ">3</span>
+                                </div>
+                                <div class="col">
+                                    <img src="4cc1ed82-d786-4d1e-8915-bf30675b7973.jpg"
+                                        width="30" alt="USG foot"
+                                        title="USG foot">
+                                    <span class="d-block mt-1 text-1">
+                                       USG foot
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="col-sm-4 col-lg-4 text-center">
+                            	<a href="https://betclic.onelink.me/oTcP/ztkqlctn?af_qr=true" target="_blank">
+              		<img src="https://assets.asec.ci/images/advertising/bcci-asecinsert-3130x413-bts-1.jpg" alt="Bannière" title="Bannière" class="img-fluid" height="70">
+                </a>
+                          </div>
+        </div>
+    </div>
+</section>
+
+ <!--News & Media Gallery Start-->
+ <section class="wf100 p80 sports-news" style="background:#eee;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Actualités et Galerie vidéos</h2>
+          </div>
+        </div>
+      </div>
+  
+      <!-- News Row -->
+      <div class="row">
+        <!-- News Box -->
+        <div class="news-box" style="display: flex; margin-bottom: 20px; align-items: center;">
+          <div class="post-thumb" style="margin-right: 20px;">
+            <a href="fc-sanpedro.php?mark=136&amp;article=HASSEN BELLIL, NOUVEAU COACH DES PÉTRUCIENS&amp;type_mark=article">
+              <i class="fas fa-link"></i>
+            </a>
+            <img src="Films et TV 24_03_2025 01_25_15.png" alt="" style="width: 350px; height: 280px;">
+          </div>
+          <div class="post-txt">
+            <h4><a href="fc-sanpedro.php?mark=136&amp;article= NOM, COACH DES PHOENIX&amp;type_mark=article">NOM, COACH DES PHOENIX</a></h4>
+            <ul class="post-meta">
+              <li><i class="fas fa-calendar-alt"></i>06/03/2024</li>
+            </ul>
+            <p>Depuis le 21 février 2024, Monsieur NOM du coach, le Responsable de formation et Directeur Technique Adjoint du club phoenix...</p>
+            <a href="fc-sanpedro.php?mark=136&amp;article=HASSEN BELLIL, NOUVEAU COACH DES PÉTRUCIENS&amp;type_mark=article" class="rm">Lire plus</a>
+          </div>
+        </div>
+  
+        <!-- Another News Box -->
+        <div class="news-box" style="display: flex; margin-bottom: 20px; align-items: center;">
+          <div class="post-thumb" style="margin-right: 20px;">
+            <a href="fc-sanpedro.php?mark=135&amp;article=&amp;type_mark=article">
+              <i class="fas fa-link"></i>
+            </a>
+            <img src="Films et TV 24_03_2025 01_22_43.png" alt="" style="width: 350px; height: 280px;">
+          </div>
+          <div class="post-txt">
+            <h4><a href="fc-sanpedro.php?mark=135&amp;article=&amp;type_mark=article"></a></h4>
+            <ul class="post-meta">
+              <li><i class="fas fa-calendar-alt"></i>04/03/2025</li>
+            </ul>
+            <p>Un bon championnat est fait de bouleversement et de rebondissement...</p>
+            <a href="fc-sanpedro.php?mark=135&amp;article=&amp;type_mark=article" class="rm">Lire plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            <!--News Box End--> 
+		  
+		  		  		  
+          <!--Side 2 News Start-->
+          <div class="col-lg-4"> 
+            <!--Box Start-->
+            <div class="hnews-box">
+              <div class="thumb"> <span>Interview</span> <a href="fc-sanpedro.php?mark=130&amp;article=BÉDI GUY STEPHANE MEILLEUR BUTEUR&amp;type_mark=article"><i class="fas fa-link"></i></a><img style="width:350px; height:186px;" src="Outil Capture d’écran 25_03_2025 14_34_46.png" alt=""></div>
+              <div class="hnews-txt">
+                <h4> <a href="fc-sanpedro.php?mark=130&amp;article=BÉDI GUY STEPHANE MEILLEUR BUTEUR&amp;type_mark=article">AZIA HABIB MEILLEUR BUTEUR</a> </h4>
+                <ul class="news-meta">
+                  <li><i class="far fa-clock"></i>07/03/2025</li>
+           
+                </ul>
+              </div>
+            </div>
+            <!--Box End-->
+
+
+					  		              <!--Box Start-->
+            <div class="hnews-box">
+              <div class="thumb"> <span>Dossier</span> <a href="fc-sanpedro.php?mark=142&amp;article=LE FC SAN PEDRO REMPORTE SON 1er TITRE&amp;type_mark=article"><i class="fas fa-link"></i></a><img style="width:350px; height:186px;"src="téléchargement.jpg" alt=""></div>
+              <div class="hnews-txt">
+                <h4> <a href="fc-sanpedro.php?mark=142&amp;article=LE FC SAN PEDRO REMPORTE SON 1er TITRE&amp;type_mark=article">LE PHOENIX Club D'Abidjan a joué SON 1er match</a> </h4>
+                <ul class="news-meta">
+                  <li><i class="far fa-clock"></i>22/03/2025</li>
+
+                </ul>
+              </div>
+            </div>
+            <!--Box End--> 
+          </div>
+          <!--Side 2 News End--> 
+		  
+		  	 <center style="margin-top:20px; margin-bottom:20px;">
+			 
+			     <a style="font-weight:bold;color:#000;" href="actualites.php">&raquo;&nbsp;Voir toutes les actualités</a> 
+			 </center>
+        </div>
+      </div>
+      <div class="videonews wf100">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="videonews-slider" class="owl-carousel owl-theme"> 
+                
+                             <!--Start-->
+                <div class="hvideo-box"> <span class="vtime"></span> <img src="Films et TV 24_03_2025 01_22_43.png" alt="">
+                  <div class="hv-info gallery"> <a target="_blank" href="https://www.tiktok.com/@phoenixclubabidjan/video/7484697412754296069?is_from_webapp=1&sender_device=pc&web_id=7468436661095269893" data-rel="prettyPhoto[]" class="play"><i class="fas fa-play"></i></a>
+                    <h4><a href="#" >LES TEMPS FORTS DES MATCH</a></h4>
+                  </div>
+                </div>
+                <!--End--> 
+                
+                <!--Start-->
+                <div class="hvideo-box"> <span class="vtime"></span> <img src="Films et TV 24_03_2025 01_19_18.png" alt="">
+                  <div class="hv-info gallery"> <a target="_blank" href="https://www.tiktok.com/@phoenixclubabidjan/video/7484148200979336503?is_from_webapp=1&sender_device=pc&web_id=7468436661095269893" data-rel="prettyPhoto[]" class="play"><i class="fas fa-play"></i></a>
+                    <h4><a href="#" >0:07 / 2:58 phoenix club abidjan : PRÉSENTATION DES SEANCES D'ENTRAINEMENT </a></h4>
+                  </div>
+                </div>
+                <!--End--> 
+                
+                <!--Start-->
+                <div class="hvideo-box"> <span class="vtime"></span> <img src="uploads/1698074976vid4.jpg" alt="">
+                  <div class="hv-info gallery"> <a target="_blank" href="https://www.youtube.com/watch?v=HbjNr-EWP6M" data-rel="prettyPhoto[]" class="play"><i class="fas fa-play"></i></a>
+                    <h4><a href="#" >phoenix club abidjan : RECEPTION D'ÉQUIPEMENTS DE FITNESS</a></h4>
+                  </div>
+                </div>
+                <!--End--> 
+                
+                <!--Start-->
+                <div class="hvideo-box"> <span class="vtime"></span> <img src="uploads/1696874219vid1.jpg" alt="">
+                  <div class="hv-info gallery"> <a target="_blank" href="https://www.youtube.com/watch?v=DHsDSNGELCE" data-rel="prettyPhoto[]" class="play"><i class="fas fa-play"></i></a>
+                    <h4><a href="#" >VIDÉO DE PRÉSENTATION : DES DIFFERENTS JOUEURS</a></h4>
+                  </div>
+                </div>
+                <!--End--> 
+                
+
+                
+               
+                
+				
+                
+              </div>
+            </div>
+          </div>
+		  
+		    	 <center style="margin-top:20px; margin-bottom:20px;">
+			 
+			     <a style="font-weight:bold;color:#000;" href="galerie-videos.php">&raquo;&nbsp;Voir toutes les vidéos</a> 
+				  </center>
+		  
+        </div>
+      </div>
+    </section>
+    <!--News & Media Gallery End-->
+
+    <div class="sections-container">
+        <div class="section">
+           
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="section section1"><i class="fab fa-facebook"></i></a>
+                
+            </div>
+        </div>
+        <div class="section">
+            
+            <div class="social-icons">
+                
+                <a href="https://instagram.com" target="_blank" class="section section2"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+        </div>
+        <div class="section">
+           
+            <div class="social-icons">
+
+                <a href="https://www.tiktok.com/@phoenixclubabidjan?_t=ZM-8uu5LHkF2Ob&_r=1" target="_blank" class="section section3"><i class="fab fa-tiktok"></i></a>
+              
+            </div>
+        </div>
+        <div class="section">
+            
+            <div class="social-icons">
+                <a href="https://whatsapp.com" target="_blank" class="section section4"><i class="fab fa-whatsapp"></i></a>
+                 
+            </div>
+        </div>
+    </div>
+
+
+
+     <footer>
+ 
+     </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

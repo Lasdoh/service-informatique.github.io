@@ -1,0 +1,53 @@
+
+.scroll-text {
+  border: 1px solid red;
+  width: 400px;
+  height: 4.5em;
+  overflow: hidden;
+}
+.scroll-text ul {
+  width: 400px;
+  min-height: 400px;
+  overflow: hidden;
+  margin: 0;
+}
+.scroll-text ul li {
+  height: 1.5em;
+  float: left;
+  list-style-type: none;
+}
+
+.scroll-img5 {
+  border: 0px solid red;
+  width: 400px;
+  height: 340px;
+  overflow: hidden;
+  font-size: 15px;
+}
+.scroll-img5 ul {
+  width: 700px;
+  height: 350px;
+  margin: 0;
+}
+.scroll-img5 ul li {
+  display:block;
+    height: 350px;
+    /*margin: 10px 0 10px 10px;*/
+    width: 310px !important;
+}
+#demo4.scroll-img5 ul,
+#demo5.scroll-img5 ul {
+  width: 1000px;
+}
+#demo5-btn {
+    width: 100% !important;
+  padding-top: 10px !important;
+}
+.titre{
+  display: block;
+  width: 400px;
+  color: #111;
+  clear: both;
+  text-align: left;
+  margin: 5px;
+}
